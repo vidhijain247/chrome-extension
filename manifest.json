@@ -1,0 +1,14 @@
+ {
+  "manifest_version": 3,
+  "name": "Gmail Shortcut Override",
+  "version": "1.0",
+  "description": "Override specific keyboard shortcuts on Gmail.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"], 
+      "js": ["content-script.js"],  
+      "all_frames": true  
+    }
+  ]
+}
